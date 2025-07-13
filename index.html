@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <!-- 自定义时间点 HTML开始 -->
+    <script>
+      performance.mark('start-html');
+    </script>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <title> 英雄联盟 </title>
+    <meta name="renderer" content="webkit" />
+    <meta http-equiv="x-dns-prefetch-control" content="on" />
+    <link rel="dns-prefetch" href="//wegame.gtimg.com" />
+    <meta http-equiv="Cache-Control" content="no-siteapp" />
+    <!--#include virtual="/middle/vue3-sdk/vue3.html" -->
+    <script type="module" crossorigin src="/launcher/assets/src--pages--main--index.js"></script>
+    <link rel="modulepreload" crossorigin href="/launcher/assets/index.vue_vue_type_script_setup_true_lang.js">
+    <link rel="modulepreload" crossorigin href="/launcher/assets/index.js">
+    <link rel="stylesheet" href="/launcher/assets/index.css">
+  </head>
+
+  <body class="page-body">
+    <!-- 自定义时间点 BODY开始 -->
+    <script>
+      performance.mark('start-body');
+      window.onerror = function (msg, url, line, col, error) {
+        if (typeof TGP !== 'undefined' && TGP.log) {
+          TGP.log(arguments);
+        }
+      };
+    </script>
+    <div id="app"></div>
+    
+    <!--#include virtual="/middle/wegame-sdk/wegame-sdk-0.html"-->
+  </body>
+</html>
